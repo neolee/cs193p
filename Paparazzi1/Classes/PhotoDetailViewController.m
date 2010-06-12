@@ -31,10 +31,17 @@
     
     UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", photoName]];
     [imageView setImage:image];
-    [scrollView setContentSize:[image size]];
-    
-    [scrollView setMaximumZoomScale:2.0];
-    [scrollView setMinimumZoomScale:0.25];
+
+    [scrollView setContentSize:CGSizeMake(imageView.frame.size.width, imageView.frame.size.height)];
+    [scrollView setMaximumZoomScale:5.0];
+    [scrollView setMinimumZoomScale:0.2];
+    [scrollView setAutoresizingMask:(UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight)];
+    [scrollView setClipsToBounds:YES];
+}
+
+- (UIView *) viewForZoomingInScrollView: (UIScrollView *) scrollView
+{
+	return imageView;
 }
 
 /*
@@ -56,21 +63,6 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-}
-
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-	UITouch *touch = [[event allTouches] anyObject];
-    
-	if ([touch view] == imageView) {
-		CGPoint location = [touch locationInView:scrollView];
-		imageView.center = location;
-		[scrollView bringSubviewToFront:imageView];
-	}
-}
-
-- (UIView *) viewForZoomingInScrollView: (UIScrollView *) scrollView
-{
-	return imageView;
 }
 
 - (void)dealloc {
