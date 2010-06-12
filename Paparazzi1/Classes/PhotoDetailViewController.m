@@ -32,9 +32,10 @@
     UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", photoName]];
     [imageView setImage:image];
 
-    [scrollView setContentSize:CGSizeMake(imageView.frame.size.width, imageView.frame.size.height)];
+//    [scrollView setContentSize:CGSizeMake(imageView.frame.size.width, imageView.frame.size.height)];
     [scrollView setMaximumZoomScale:5.0];
     [scrollView setMinimumZoomScale:0.2];
+    [scrollView setAutoresizesSubviews:YES];
     [scrollView setAutoresizingMask:(UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight)];
     [scrollView setClipsToBounds:YES];
 }
@@ -44,13 +45,12 @@
 	return imageView;
 }
 
-/*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+//    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
-*/
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
