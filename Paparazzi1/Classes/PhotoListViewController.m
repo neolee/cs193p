@@ -12,7 +12,7 @@
 
 @implementation PhotoListViewController
 
-@synthesize contactName;
+@synthesize personName;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -28,16 +28,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *viewTitle;
-    if (contactName != nil) {
-        viewTitle = [NSString stringWithFormat:@"%@'s Photos", contactName]; 
-    } else {
-        viewTitle = @"Recent Photos";
-    }
+    if (personName != nil) {
+        // Set images/labels via person mame
+        [image1 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@ 1 Icon.jpg", personName]]];
+        [image2 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@ 2 Icon.jpg", personName]]];
+        [image3 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@ 3 Icon.jpg", personName]]];
+        [image4 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@ 4 Icon.jpg", personName]]];
+        [label1 setText:[NSString stringWithFormat:@"%@ 1", personName]];
+        [label2 setText:[NSString stringWithFormat:@"%@ 2", personName]];
+        [label3 setText:[NSString stringWithFormat:@"%@ 3", personName]];
+        [label4 setText:[NSString stringWithFormat:@"%@ 4", personName]];
 
-    [self setTitle:viewTitle];
-    
-    [viewTitle release];
+        [self setTitle:[NSString stringWithFormat:@"%@'s Photos", personName]];
+    } else {
+        // Set images/labels to some images
+        [image1 setImage:[UIImage imageNamed:@"Katy Perry 1 Icon.jpg"]];
+        [image2 setImage:[UIImage imageNamed:@"Katy Perry 2 Icon.jpg"]];
+        [image3 setImage:[UIImage imageNamed:@"Katy Perry 3 Icon.jpg"]];
+        [image4 setImage:[UIImage imageNamed:@"Taylor Swift 2 Icon.jpg"]];
+        [label1 setText:@"Katy Perry 1"];
+        [label2 setText:@"Katy Perry 2"];
+        [label3 setText:@"Katy Perry 3"];
+        [label4 setText:@"Taylor Swift 2"];
+
+        [self setTitle:@"Recent Photos"];
+    }
 }
 
 /*
@@ -63,15 +78,19 @@
 }
 
 - (void) viewFirst:(id)sender {
-    [self viewPhoto:@"Photo 1"];
+    [self viewPhoto:label1.text];
 }
 
 - (void) viewSecond:(id)sender {
-    [self viewPhoto:@"Photo 2"];
+    [self viewPhoto:label2.text];
 }
 
 - (void) viewThird:(id)sender {
-    [self viewPhoto:@"Photo 3"];
+    [self viewPhoto:label3.text];
+}
+
+- (void) viewFourth:(id)sender {
+    [self viewPhoto:label4.text];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,11 +108,17 @@
 
 
 - (void)dealloc {
-    [contactName release];
+    [personName release];
+
+    [image1 release];
+    [image2 release];
+    [image3 release];
+    [image4 release];
     
     [label1 release];
     [label2 release];
     [label3 release];
+    [label4 release];
     
     [super dealloc];
 }

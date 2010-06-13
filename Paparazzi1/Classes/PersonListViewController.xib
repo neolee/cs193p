@@ -47,25 +47,25 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 20}, {64, 64}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<int key="IBUIContentMode">2</int>
+						<int key="IBUIContentMode">1</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">Neo Lee.jpg</string>
+							<string key="NSResourceName">Taylor Swift.jpg</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="652755562">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{107, 41}, {66, 21}}</string>
+						<string key="NSFrame">{{107, 41}, {113, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Neo Lee</string>
+						<string key="IBUIText">Taylor Swift</string>
 						<object class="NSColor" key="IBUITextColor" id="744011426">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -108,25 +108,25 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 92}, {64, 64}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<int key="IBUIContentMode">2</int>
+						<int key="IBUIContentMode">1</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">Jessica Lee.jpg</string>
+							<string key="NSResourceName">Katy Perry.jpg</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="851611059">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{107, 113}, {91, 21}}</string>
+						<string key="NSFrame">{{107, 113}, {113, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Jessica Lee</string>
+						<string key="IBUIText">Katy Perry</string>
 						<reference key="IBUITextColor" ref="744011426"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -588,13 +588,13 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>Jessica Lee.jpg</string>
-				<string>Neo Lee.jpg</string>
+				<string>Katy Perry.jpg</string>
+				<string>Taylor Swift.jpg</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{100, 100}</string>
-				<string>{100, 100}</string>
+				<string>{160, 160}</string>
+				<string>{160, 160}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">87</string>

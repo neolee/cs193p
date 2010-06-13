@@ -14,10 +14,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    [naviContacts setViewControllers:nil];
-    contactsViewController = [[PersonListViewController alloc] init];
-    [contactsViewController setTitle:@"Contacts"];
-    [naviContacts pushViewController:contactsViewController animated:NO];
+    [naviPersons setViewControllers:nil];
+    personsViewController = [[PersonListViewController alloc] init];
+    [personsViewController setTitle:@"Persons"];
+    [naviPersons pushViewController:personsViewController animated:NO];
     
     [naviRecents setViewControllers:nil];
     recentsViewController = [[PhotoListViewController alloc] init];
@@ -32,10 +32,10 @@
 }
 
 - (void)dealloc {
-    [contactsViewController release];
+    [personsViewController release];
     [recentsViewController release];
     
-    [naviContacts release];
+    [naviPersons release];
     [naviRecents release];
     [tabMain release];    
     [window release];

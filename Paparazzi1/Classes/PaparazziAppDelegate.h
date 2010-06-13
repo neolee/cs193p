@@ -13,11 +13,11 @@
 @interface PaparazziAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     
-    PersonListViewController *contactsViewController;
+    PersonListViewController *personsViewController;
     PhotoListViewController *recentsViewController;
     
     IBOutlet UITabBarController *tabMain;
-    IBOutlet UINavigationController *naviContacts;
+    IBOutlet UINavigationController *naviPersons;
     IBOutlet UINavigationController *naviRecents;
 }
 

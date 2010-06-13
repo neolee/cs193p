@@ -37,13 +37,13 @@
 }
 */
 
-- (void) viewContactPhotos:(NSString *)name {
+- (void) viewPhotos:(NSString *)name {
     if (name == nil) {
         return;
     }
     
     PhotoListViewController *photoListViewController = [[PhotoListViewController alloc] init];
-    photoListViewController.contactName = name;
+    photoListViewController.personName = name;
     
     [[self navigationController] pushViewController:photoListViewController animated:YES];
     
@@ -51,11 +51,11 @@
 }
 
 - (void) viewFirst:(id)sender {
-    [self viewContactPhotos:label1.text];
+    [self viewPhotos:label1.text];
 }
 
 - (void) viewSecond:(id)sender {
-    [self viewContactPhotos:label2.text];
+    [self viewPhotos:label2.text];
 }
 
 - (void)didReceiveMemoryWarning {
