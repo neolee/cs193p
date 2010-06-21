@@ -7,25 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlickrFetcher.h"
+#import "Person.h"
+#import "Photo.h"
+#import "PhotoDetailViewController.h"
 
 
-@interface PhotoListViewController : UIViewController {
-    NSString *personName;
-
-    IBOutlet UIImageView *image1;
-    IBOutlet UIImageView *image2;
-    IBOutlet UIImageView *image3;
-    IBOutlet UIImageView *image4;
+@interface PhotoListViewController : UITableViewController {
+    NSManagedObjectContext *context;
+    NSFetchedResultsController *fetchedResultsController;
+    Person *person;
     
-    IBOutlet UILabel *label1;
-    IBOutlet UILabel *label2;
-    IBOutlet UILabel *label3;
-    IBOutlet UILabel *label4;
+    PhotoDetailViewController *photoDetailViewController;
 }
-@property (nonatomic, copy) NSString *personName;
-
-- (IBAction) viewFirst:(id)sender;
-- (IBAction) viewSecond:(id)sender;
-- (IBAction) viewThird:(id)sender;
-- (IBAction) viewFourth:(id)sender;
+@property (nonatomic, retain) NSManagedObjectContext *context;
+@property (nonatomic, retain) Person *person;
 @end

@@ -12,86 +12,163 @@
 
 @implementation PhotoListViewController
 
-@synthesize personName;
+@synthesize context, person;
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
+
+#pragma mark -
+#pragma mark View lifecycle
+
+// The designated initializer. Override if you create the controller programmatically and 
+// want to perform customization that is not appropriate for viewDidLoad.
+- (id)initWithStyle:(UITableViewStyle)style {
+    if (self = [super initWithStyle:style]) {
+        FlickrFetcher *flickrFetcher = [FlickrFetcher sharedInstance];
+        context = [flickrFetcher managedObjectContext];        
     }
     return self;
 }
-*/
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if (personName != nil) {
-        // Set images/labels via person mame
-        [image1 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@ 1 Icon.jpg", personName]]];
-        [image2 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@ 2 Icon.jpg", personName]]];
-        [image3 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@ 3 Icon.jpg", personName]]];
-        [image4 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@ 4 Icon.jpg", personName]]];
-        [label1 setText:[NSString stringWithFormat:@"%@ 1", personName]];
-        [label2 setText:[NSString stringWithFormat:@"%@ 2", personName]];
-        [label3 setText:[NSString stringWithFormat:@"%@ 3", personName]];
-        [label4 setText:[NSString stringWithFormat:@"%@ 4", personName]];
-
-        [self setTitle:[NSString stringWithFormat:@"%@'s Photos", personName]];
-    } else {
-        // Set images/labels to some images
-        [image1 setImage:[UIImage imageNamed:@"Katy Perry 1 Icon.jpg"]];
-        [image2 setImage:[UIImage imageNamed:@"Katy Perry 2 Icon.jpg"]];
-        [image3 setImage:[UIImage imageNamed:@"Katy Perry 3 Icon.jpg"]];
-        [image4 setImage:[UIImage imageNamed:@"Taylor Swift 2 Icon.jpg"]];
-        [label1 setText:@"Katy Perry 1"];
-        [label2 setText:@"Katy Perry 2"];
-        [label3 setText:@"Katy Perry 3"];
-        [label4 setText:@"Taylor Swift 2"];
-
-        [self setTitle:@"Recent Photos"];
-    }
+    NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Photo" inManagedObjectContext:context];
+    [request setEntity:entity];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    [request setSortDescriptors:sortDescriptors];
+    [request setFetchBatchSize:FETCH_BATCH_SIZE];
+    [sortDescriptors release];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"person=%@", person];
+    [request setPredicate:predicate];
+    
+    fetchedResultsController = [[NSFetchedResultsController alloc]
+                                initWithFetchRequest:request 
+                                managedObjectContext:context
+                                sectionNameKeyPath:nil
+                                cacheName:@"tempPhoto"];
+    
+    [request release];
+    NSError *error;
+    [fetchedResultsController performFetch:&error];
 }
 
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
-- (void) viewPhoto:(NSString *)name {
-    if (name == nil) {
-        return;
+
+#pragma mark -
+#pragma mark Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    NSInteger size = [[fetchedResultsController sections] count];
+    
+    if (size == 0) {
+        size = 1;
     }
     
-    PhotoDetailViewController *photoDetailViewController = [[PhotoDetailViewController alloc] init];
-    photoDetailViewController.photoName = name;
-    photoDetailViewController.photoTitle = name;
+    return size;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSArray *sections = [fetchedResultsController sections];
+    NSInteger count = 0;
     
-    [[self navigationController] pushViewController:photoDetailViewController animated:YES];
+    if ([sections count]) {
+        id <NSFetchedResultsSectionInfo> sectionInfo = [sections objectAtIndex:section];
+        count = [sectionInfo numberOfObjects];
+    }
     
-    [photoDetailViewController release];
+    return count;
 }
 
-- (void) viewFirst:(id)sender {
-    [self viewPhoto:label1.text];
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc]
+                 initWithStyle:UITableViewCellStyleDefault
+                 reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    // Set up cell
+    Photo *photo = [fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = [photo name];
+    cell.detailTextLabel.text = [photo url];
+    cell.imageView.image = [UIImage imageNamed:[photo url]];
+    
+    return [cell autorelease];
 }
 
-- (void) viewSecond:(id)sender {
-    [self viewPhoto:label2.text];
+
+#pragma mark -
+#pragma mark Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    photoDetailViewController = [[PhotoDetailViewController alloc] init];
+    Photo *photo = [fetchedResultsController objectAtIndexPath:indexPath];
+    
+    [photoDetailViewController setPhoto:photo];
+    [photoDetailViewController setTitle:[photo name]];
+    
+    [self.navigationController pushViewController:photoDetailViewController animated:YES];
 }
 
-- (void) viewThird:(id)sender {
-    [self viewPhoto:label3.text];
-}
 
-- (void) viewFourth:(id)sender {
-    [self viewPhoto:label4.text];
-}
+/*
+ // Override to support conditional editing of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the specified item to be editable.
+ return YES;
+ }
+ */
+
+
+/*
+ // Override to support editing the table view.
+ - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
+ if (editingStyle == UITableViewCellEditingStyleDelete) {
+ // Delete the row from the data source
+ [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
+ }   
+ else if (editingStyle == UITableViewCellEditingStyleInsert) {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }   
+ }
+ */
+
+
+/*
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+ }
+ */
+
+
+/*
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
+
+
+#pragma mark -
+#pragma mark Memory management
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
@@ -108,17 +185,9 @@
 
 
 - (void)dealloc {
-    [personName release];
-
-    [image1 release];
-    [image2 release];
-    [image3 release];
-    [image4 release];
-    
-    [label1 release];
-    [label2 release];
-    [label3 release];
-    [label4 release];
+    [person release];
+    [context release];
+    [fetchedResultsController release];
     
     [super dealloc];
 }

@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlickrFetcher.h"
+#import "Person.h"
+#import "Photo.h"
+#import "PhotoListViewController.h"
 
 
-@interface PersonListViewController : UIViewController {
-    IBOutlet UILabel *label1;
-    IBOutlet UILabel *label2;
+@interface PersonListViewController : UITableViewController {
+    NSManagedObjectContext *context;
+    NSFetchedResultsController *fetchedResultsController;
+    
+    PhotoListViewController *photoListViewController;
 }
-- (IBAction) viewFirst:(id)sender;
-- (IBAction) viewSecond:(id)sender;
+@property (nonatomic, retain) NSManagedObjectContext *context;
 @end

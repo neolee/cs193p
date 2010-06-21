@@ -18,7 +18,7 @@
 }
 
 - (void)populateCDStorage {
-    flickrContext = [flickrFetcher managedObjectContext];
+    context = [flickrFetcher managedObjectContext];
     NSLog(@"Database not initiated. Populated from the plist file.");
     
     // First we should read FakeData.plist into an array
@@ -51,7 +51,7 @@
     
     NSMutableArray *personNames = [[NSMutableArray alloc] init];
     while (obj != nil) {
-        Photo *photo = (Photo *)[NSEntityDescription insertNewObjectForEntityForName:@"Photo" inManagedObjectContext:flickrContext];
+        Photo *photo = (Photo *)[NSEntityDescription insertNewObjectForEntityForName:@"Photo" inManagedObjectContext:context];
         [photo setName:[obj objectForKey:@"name"]];
         [photo setUrl:[obj objectForKey:@"path"]];
         NSLog(@"Photo added: %@", photo);
@@ -62,7 +62,7 @@
         BOOL existPerson = [predicate evaluateWithObject:obj];
         
         if (existPerson == NO) {
-            Person *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:flickrContext];
+            Person *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:context];
             [person setName:personName];
             [person addPhotosObject:photo];
             [photo setPerson:person];
@@ -86,12 +86,11 @@
     if (![flickrFetcher databaseExists]) {
         [self populateCDStorage];
     } else {
-        flickrContext = [flickrFetcher managedObjectContext];
+        context = [flickrFetcher managedObjectContext];
     }
 
     [naviPersons setViewControllers:nil];
     personsViewController = [[PersonListViewController alloc] init];
-    [personsViewController setTitle:@"Persons"];
     [naviPersons pushViewController:personsViewController animated:NO];
     
     [naviRecents setViewControllers:nil];
@@ -108,10 +107,10 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     if (flickrFetcher != nil) {
-        if ([flickrContext hasChanges] == YES) {
+        if ([context hasChanges] == YES) {
             NSError *error = nil;
             
-            BOOL saved = [flickrContext save:&error];
+            BOOL saved = [context save:&error];
             NSLog(@"Saved? %@", (saved?@"YES":@"NO"));
             if (saved == NO) {
                 NSLog(@"Fatal Error: %@, %@", error, [error userInfo]);
@@ -122,7 +121,7 @@
 
 - (void)dealloc {
     [flickrFetcher release];
-    [flickrContext release];
+    [context release];
     
     [personsViewController release];
     [recentsViewController release];

@@ -11,33 +11,20 @@
 
 @implementation PhotoDetailViewController
 
-@synthesize photoName, photoTitle;
+@synthesize photo;
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setTitle:photoTitle];
-    
-    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", photoName]];
+    UIImage *image = [UIImage imageNamed:[photo url]];
     [imageView setImage:image];
-
-//    [scrollView setContentSize:CGSizeMake(imageView.frame.size.width, imageView.frame.size.height)];
+    
     [scrollView setMaximumZoomScale:5.0];
     [scrollView setMinimumZoomScale:0.2];
     [scrollView setAutoresizesSubviews:YES];
     [scrollView setAutoresizingMask:(UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight)];
-    [scrollView setClipsToBounds:YES];
+    [scrollView setClipsToBounds:YES];    
 }
 
 - (UIView *) viewForZoomingInScrollView: (UIScrollView *) scrollView
@@ -66,8 +53,7 @@
 }
 
 - (void)dealloc {
-    [photoName release];
-    [photoTitle release];
+    [photo release];
     
     [imageView release];
     [scrollView release];

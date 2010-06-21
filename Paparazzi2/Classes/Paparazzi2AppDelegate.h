@@ -15,7 +15,7 @@
 
 @interface Paparazzi2AppDelegate : NSObject <UIApplicationDelegate> {
     FlickrFetcher *flickrFetcher;
-    NSManagedObjectContext *flickrContext;
+    NSManagedObjectContext *context;
     
     UIWindow *window;
     
@@ -26,7 +26,6 @@
     IBOutlet UINavigationController *naviPersons;
     IBOutlet UINavigationController *naviRecents;
 }
-
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 - (NSString *)applicationDocumentsDirectory;

@@ -7,15 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Photo.h"
 
 
-@interface PhotoDetailViewController : UIViewController {
-    NSString *photoName;
-    NSString *photoTitle;
-    
+@interface PhotoDetailViewController : UIViewController <UIScrollViewDelegate> {
     IBOutlet UIScrollView *scrollView;
     IBOutlet UIImageView *imageView;
+    
+    Photo *photo;
 }
-@property (nonatomic, copy) NSString *photoName;
-@property (nonatomic, copy) NSString *photoTitle;
+@property (nonatomic, retain) Photo *photo;
 @end

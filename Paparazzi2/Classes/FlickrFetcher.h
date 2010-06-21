@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
+#define FETCH_BATCH_SIZE 10
+
 @interface FlickrFetcher : NSObject {
     NSManagedObjectModel *managedObjectModel;
     NSManagedObjectContext *managedObjectContext;

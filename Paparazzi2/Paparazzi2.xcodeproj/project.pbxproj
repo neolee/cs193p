@@ -14,11 +14,8 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		B565FACC11C3637C00FDC062 /* PersonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B565FACA11C3637C00FDC062 /* PersonListViewController.m */; };
-		B565FACD11C3637C00FDC062 /* PersonListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565FACB11C3637C00FDC062 /* PersonListViewController.xib */; };
 		B565FB6611C384B400FDC062 /* PhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B565FB6411C384B400FDC062 /* PhotoListViewController.m */; };
-		B565FB6711C384B400FDC062 /* PhotoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565FB6511C384B400FDC062 /* PhotoListViewController.xib */; };
 		B565FB6D11C384CA00FDC062 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B565FB6B11C384CA00FDC062 /* PhotoDetailViewController.m */; };
-		B565FB6E11C384CA00FDC062 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565FB6C11C384CA00FDC062 /* PhotoDetailViewController.xib */; };
 		B573AA3F11CF3E0800FFDDD4 /* Katy Perry 1 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA2911CF3E0800FFDDD4 /* Katy Perry 1 Icon.jpg */; };
 		B573AA4011CF3E0800FFDDD4 /* Katy Perry 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA2A11CF3E0800FFDDD4 /* Katy Perry 1.jpg */; };
 		B573AA4111CF3E0800FFDDD4 /* Katy Perry 2 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA2B11CF3E0800FFDDD4 /* Katy Perry 2 Icon.jpg */; };
@@ -45,6 +42,7 @@
 		B573AA5811CF3E2800FFDDD4 /* FakeData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B573AA5711CF3E2800FFDDD4 /* FakeData.plist */; };
 		B573AA7F11CF49DF00FFDDD4 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = B573AA7C11CF49DF00FFDDD4 /* Photo.m */; };
 		B573AA8011CF49DF00FFDDD4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B573AA7E11CF49DF00FFDDD4 /* Person.m */; };
+		B573AC8E11CFC79C00FFDDD4 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B573AC8D11CFC79C00FFDDD4 /* PhotoDetailViewController.xib */; };
 		B5BF07B411C6205A0082E71D /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BF07B311C6205A0082E71D /* FlickrFetcher.m */; };
 		B5BF07C911C622120082E71D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BF07C811C622120082E71D /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -62,13 +60,10 @@
 		8D1107310486CEB800E47090 /* Paparazzi2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Paparazzi2-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		B565FAC911C3637C00FDC062 /* PersonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonListViewController.h; sourceTree = "<group>"; };
 		B565FACA11C3637C00FDC062 /* PersonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonListViewController.m; sourceTree = "<group>"; };
-		B565FACB11C3637C00FDC062 /* PersonListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PersonListViewController.xib; path = Classes/PersonListViewController.xib; sourceTree = "<group>"; };
 		B565FB6311C384B400FDC062 /* PhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListViewController.h; sourceTree = "<group>"; };
 		B565FB6411C384B400FDC062 /* PhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListViewController.m; sourceTree = "<group>"; };
-		B565FB6511C384B400FDC062 /* PhotoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PhotoListViewController.xib; path = Classes/PhotoListViewController.xib; sourceTree = "<group>"; };
 		B565FB6A11C384CA00FDC062 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
 		B565FB6B11C384CA00FDC062 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
-		B565FB6C11C384CA00FDC062 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PhotoDetailViewController.xib; path = Classes/PhotoDetailViewController.xib; sourceTree = "<group>"; };
 		B573AA2911CF3E0800FFDDD4 /* Katy Perry 1 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 1 Icon.jpg"; sourceTree = "<group>"; };
 		B573AA2A11CF3E0800FFDDD4 /* Katy Perry 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 1.jpg"; sourceTree = "<group>"; };
 		B573AA2B11CF3E0800FFDDD4 /* Katy Perry 2 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 2 Icon.jpg"; sourceTree = "<group>"; };
@@ -97,6 +92,7 @@
 		B573AA7C11CF49DF00FFDDD4 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		B573AA7D11CF49DF00FFDDD4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		B573AA7E11CF49DF00FFDDD4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B573AC8D11CFC79C00FFDDD4 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
 		B5BF07B211C6205A0082E71D /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		B5BF07B311C6205A0082E71D /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 		B5BF07C811C622120082E71D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -174,9 +170,7 @@
 				B573AA5711CF3E2800FFDDD4 /* FakeData.plist */,
 				B573AA5511CF3E1800FFDDD4 /* Paparazzi.xcdatamodel */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				B565FACB11C3637C00FDC062 /* PersonListViewController.xib */,
-				B565FB6511C384B400FDC062 /* PhotoListViewController.xib */,
-				B565FB6C11C384CA00FDC062 /* PhotoDetailViewController.xib */,
+				B573AC8D11CFC79C00FFDDD4 /* PhotoDetailViewController.xib */,
 				8D1107310486CEB800E47090 /* Paparazzi2-Info.plist */,
 			);
 			name = Resources;
@@ -265,9 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				B565FACD11C3637C00FDC062 /* PersonListViewController.xib in Resources */,
-				B565FB6711C384B400FDC062 /* PhotoListViewController.xib in Resources */,
-				B565FB6E11C384CA00FDC062 /* PhotoDetailViewController.xib in Resources */,
 				B573AA3F11CF3E0800FFDDD4 /* Katy Perry 1 Icon.jpg in Resources */,
 				B573AA4011CF3E0800FFDDD4 /* Katy Perry 1.jpg in Resources */,
 				B573AA4111CF3E0800FFDDD4 /* Katy Perry 2 Icon.jpg in Resources */,
@@ -291,6 +282,7 @@
 				B573AA5311CF3E0800FFDDD4 /* Taylor Swift 4.jpg in Resources */,
 				B573AA5411CF3E0800FFDDD4 /* Taylor Swift.jpg in Resources */,
 				B573AA5811CF3E2800FFDDD4 /* FakeData.plist in Resources */,
+				B573AC8E11CFC79C00FFDDD4 /* PhotoDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
