@@ -19,37 +19,40 @@
 		B565FB6711C384B400FDC062 /* PhotoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565FB6511C384B400FDC062 /* PhotoListViewController.xib */; };
 		B565FB6D11C384CA00FDC062 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B565FB6B11C384CA00FDC062 /* PhotoDetailViewController.m */; };
 		B565FB6E11C384CA00FDC062 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565FB6C11C384CA00FDC062 /* PhotoDetailViewController.xib */; };
-		B5B9019011C4F92E007892BB /* Katy Perry 1 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018011C4F92E007892BB /* Katy Perry 1 Icon.jpg */; };
-		B5B9019111C4F92E007892BB /* Katy Perry 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018111C4F92E007892BB /* Katy Perry 1.jpg */; };
-		B5B9019211C4F92E007892BB /* Katy Perry 2 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018211C4F92E007892BB /* Katy Perry 2 Icon.jpg */; };
-		B5B9019311C4F92E007892BB /* Katy Perry 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018311C4F92E007892BB /* Katy Perry 2.jpg */; };
-		B5B9019411C4F92E007892BB /* Katy Perry 3 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018411C4F92E007892BB /* Katy Perry 3 Icon.jpg */; };
-		B5B9019511C4F92E007892BB /* Katy Perry 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018511C4F92E007892BB /* Katy Perry 3.jpg */; };
-		B5B9019611C4F92E007892BB /* Katy Perry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018611C4F92E007892BB /* Katy Perry.jpg */; };
-		B5B9019711C4F92E007892BB /* Taylor Swift 1 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018711C4F92E007892BB /* Taylor Swift 1 Icon.jpg */; };
-		B5B9019811C4F92E007892BB /* Taylor Swift 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018811C4F92E007892BB /* Taylor Swift 1.jpg */; };
-		B5B9019911C4F92E007892BB /* Taylor Swift 2 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018911C4F92E007892BB /* Taylor Swift 2 Icon.jpg */; };
-		B5B9019A11C4F92E007892BB /* Taylor Swift 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018A11C4F92E007892BB /* Taylor Swift 2.jpg */; };
-		B5B9019B11C4F92E007892BB /* Taylor Swift 3 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018B11C4F92E007892BB /* Taylor Swift 3 Icon.jpg */; };
-		B5B9019C11C4F92E007892BB /* Taylor Swift 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018C11C4F92E007892BB /* Taylor Swift 3.jpg */; };
-		B5B9019D11C4F92E007892BB /* Taylor Swift 4 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018D11C4F92E007892BB /* Taylor Swift 4 Icon.jpg */; };
-		B5B9019E11C4F92E007892BB /* Taylor Swift 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018E11C4F92E007892BB /* Taylor Swift 4.jpg */; };
-		B5B9019F11C4F92E007892BB /* Taylor Swift.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B9018F11C4F92E007892BB /* Taylor Swift.jpg */; };
-		B5B901A911C4FB18007892BB /* Katy Perry 4 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B901A711C4FB18007892BB /* Katy Perry 4 Icon.jpg */; };
-		B5B901AA11C4FB18007892BB /* Katy Perry 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B901A811C4FB18007892BB /* Katy Perry 4.jpg */; };
-		B5B901E711C50180007892BB /* Persons.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B901E611C50180007892BB /* Persons.png */; };
+		B573AA3F11CF3E0800FFDDD4 /* Katy Perry 1 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA2911CF3E0800FFDDD4 /* Katy Perry 1 Icon.jpg */; };
+		B573AA4011CF3E0800FFDDD4 /* Katy Perry 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA2A11CF3E0800FFDDD4 /* Katy Perry 1.jpg */; };
+		B573AA4111CF3E0800FFDDD4 /* Katy Perry 2 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA2B11CF3E0800FFDDD4 /* Katy Perry 2 Icon.jpg */; };
+		B573AA4211CF3E0800FFDDD4 /* Katy Perry 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA2C11CF3E0800FFDDD4 /* Katy Perry 2.jpg */; };
+		B573AA4311CF3E0800FFDDD4 /* Katy Perry 3 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA2D11CF3E0800FFDDD4 /* Katy Perry 3 Icon.jpg */; };
+		B573AA4411CF3E0800FFDDD4 /* Katy Perry 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA2E11CF3E0800FFDDD4 /* Katy Perry 3.jpg */; };
+		B573AA4511CF3E0800FFDDD4 /* Katy Perry 4 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA2F11CF3E0800FFDDD4 /* Katy Perry 4 Icon.jpg */; };
+		B573AA4611CF3E0800FFDDD4 /* Katy Perry 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3011CF3E0800FFDDD4 /* Katy Perry 4.jpg */; };
+		B573AA4711CF3E0800FFDDD4 /* Katy Perry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3111CF3E0800FFDDD4 /* Katy Perry.jpg */; };
+		B573AA4811CF3E0800FFDDD4 /* Persons.png in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3211CF3E0800FFDDD4 /* Persons.png */; };
+		B573AA4911CF3E0800FFDDD4 /* Photo 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3311CF3E0800FFDDD4 /* Photo 1.jpg */; };
+		B573AA4A11CF3E0800FFDDD4 /* Photo 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3411CF3E0800FFDDD4 /* Photo 2.jpg */; };
+		B573AA4B11CF3E0800FFDDD4 /* Photo 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3511CF3E0800FFDDD4 /* Photo 3.jpg */; };
+		B573AA4C11CF3E0800FFDDD4 /* Taylor Swift 1 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3611CF3E0800FFDDD4 /* Taylor Swift 1 Icon.jpg */; };
+		B573AA4D11CF3E0800FFDDD4 /* Taylor Swift 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3711CF3E0800FFDDD4 /* Taylor Swift 1.jpg */; };
+		B573AA4E11CF3E0800FFDDD4 /* Taylor Swift 2 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3811CF3E0800FFDDD4 /* Taylor Swift 2 Icon.jpg */; };
+		B573AA4F11CF3E0800FFDDD4 /* Taylor Swift 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3911CF3E0800FFDDD4 /* Taylor Swift 2.jpg */; };
+		B573AA5011CF3E0800FFDDD4 /* Taylor Swift 3 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3A11CF3E0800FFDDD4 /* Taylor Swift 3 Icon.jpg */; };
+		B573AA5111CF3E0800FFDDD4 /* Taylor Swift 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3B11CF3E0800FFDDD4 /* Taylor Swift 3.jpg */; };
+		B573AA5211CF3E0800FFDDD4 /* Taylor Swift 4 Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3C11CF3E0800FFDDD4 /* Taylor Swift 4 Icon.jpg */; };
+		B573AA5311CF3E0800FFDDD4 /* Taylor Swift 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3D11CF3E0800FFDDD4 /* Taylor Swift 4.jpg */; };
+		B573AA5411CF3E0800FFDDD4 /* Taylor Swift.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B573AA3E11CF3E0800FFDDD4 /* Taylor Swift.jpg */; };
+		B573AA5611CF3E1800FFDDD4 /* Paparazzi.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = B573AA5511CF3E1800FFDDD4 /* Paparazzi.xcdatamodel */; };
+		B573AA5811CF3E2800FFDDD4 /* FakeData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B573AA5711CF3E2800FFDDD4 /* FakeData.plist */; };
+		B573AA7F11CF49DF00FFDDD4 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = B573AA7C11CF49DF00FFDDD4 /* Photo.m */; };
+		B573AA8011CF49DF00FFDDD4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B573AA7E11CF49DF00FFDDD4 /* Person.m */; };
 		B5BF07B411C6205A0082E71D /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BF07B311C6205A0082E71D /* FlickrFetcher.m */; };
-		B5BF07BE11C6206B0082E71D /* FakeData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BF07BA11C6206B0082E71D /* FakeData.plist */; };
-		B5BF07BF11C6206B0082E71D /* Photo 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BF07BB11C6206B0082E71D /* Photo 1.jpg */; };
-		B5BF07C011C6206B0082E71D /* Photo 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BF07BC11C6206B0082E71D /* Photo 2.jpg */; };
-		B5BF07C111C6206B0082E71D /* Photo 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BF07BD11C6206B0082E71D /* Photo 3.jpg */; };
 		B5BF07C911C622120082E71D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BF07C811C622120082E71D /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Paparazzi2AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paparazzi2AppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* Paparazzi2AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paparazzi2AppDelegate.m; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* Paparazzi2AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paparazzi2AppDelegate.m; sourceTree = "<group>"; wrapsLines = 1; };
 		1D6058910D05DD3D006BFB54 /* Paparazzi2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paparazzi2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,31 +69,36 @@
 		B565FB6A11C384CA00FDC062 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
 		B565FB6B11C384CA00FDC062 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
 		B565FB6C11C384CA00FDC062 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PhotoDetailViewController.xib; path = Classes/PhotoDetailViewController.xib; sourceTree = "<group>"; };
-		B5B9018011C4F92E007892BB /* Katy Perry 1 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Katy Perry 1 Icon.jpg"; path = "Resources/Katy Perry 1 Icon.jpg"; sourceTree = "<group>"; };
-		B5B9018111C4F92E007892BB /* Katy Perry 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Katy Perry 1.jpg"; path = "Resources/Katy Perry 1.jpg"; sourceTree = "<group>"; };
-		B5B9018211C4F92E007892BB /* Katy Perry 2 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Katy Perry 2 Icon.jpg"; path = "Resources/Katy Perry 2 Icon.jpg"; sourceTree = "<group>"; };
-		B5B9018311C4F92E007892BB /* Katy Perry 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Katy Perry 2.jpg"; path = "Resources/Katy Perry 2.jpg"; sourceTree = "<group>"; };
-		B5B9018411C4F92E007892BB /* Katy Perry 3 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Katy Perry 3 Icon.jpg"; path = "Resources/Katy Perry 3 Icon.jpg"; sourceTree = "<group>"; };
-		B5B9018511C4F92E007892BB /* Katy Perry 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Katy Perry 3.jpg"; path = "Resources/Katy Perry 3.jpg"; sourceTree = "<group>"; };
-		B5B9018611C4F92E007892BB /* Katy Perry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Katy Perry.jpg"; path = "Resources/Katy Perry.jpg"; sourceTree = "<group>"; };
-		B5B9018711C4F92E007892BB /* Taylor Swift 1 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Taylor Swift 1 Icon.jpg"; path = "Resources/Taylor Swift 1 Icon.jpg"; sourceTree = "<group>"; };
-		B5B9018811C4F92E007892BB /* Taylor Swift 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Taylor Swift 1.jpg"; path = "Resources/Taylor Swift 1.jpg"; sourceTree = "<group>"; };
-		B5B9018911C4F92E007892BB /* Taylor Swift 2 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Taylor Swift 2 Icon.jpg"; path = "Resources/Taylor Swift 2 Icon.jpg"; sourceTree = "<group>"; };
-		B5B9018A11C4F92E007892BB /* Taylor Swift 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Taylor Swift 2.jpg"; path = "Resources/Taylor Swift 2.jpg"; sourceTree = "<group>"; };
-		B5B9018B11C4F92E007892BB /* Taylor Swift 3 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Taylor Swift 3 Icon.jpg"; path = "Resources/Taylor Swift 3 Icon.jpg"; sourceTree = "<group>"; };
-		B5B9018C11C4F92E007892BB /* Taylor Swift 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Taylor Swift 3.jpg"; path = "Resources/Taylor Swift 3.jpg"; sourceTree = "<group>"; };
-		B5B9018D11C4F92E007892BB /* Taylor Swift 4 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Taylor Swift 4 Icon.jpg"; path = "Resources/Taylor Swift 4 Icon.jpg"; sourceTree = "<group>"; };
-		B5B9018E11C4F92E007892BB /* Taylor Swift 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Taylor Swift 4.jpg"; path = "Resources/Taylor Swift 4.jpg"; sourceTree = "<group>"; };
-		B5B9018F11C4F92E007892BB /* Taylor Swift.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Taylor Swift.jpg"; path = "Resources/Taylor Swift.jpg"; sourceTree = "<group>"; };
-		B5B901A711C4FB18007892BB /* Katy Perry 4 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Katy Perry 4 Icon.jpg"; path = "Resources/Katy Perry 4 Icon.jpg"; sourceTree = "<group>"; };
-		B5B901A811C4FB18007892BB /* Katy Perry 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Katy Perry 4.jpg"; path = "Resources/Katy Perry 4.jpg"; sourceTree = "<group>"; };
-		B5B901E611C50180007892BB /* Persons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Persons.png; path = Resources/Persons.png; sourceTree = "<group>"; };
+		B573AA2911CF3E0800FFDDD4 /* Katy Perry 1 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 1 Icon.jpg"; sourceTree = "<group>"; };
+		B573AA2A11CF3E0800FFDDD4 /* Katy Perry 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 1.jpg"; sourceTree = "<group>"; };
+		B573AA2B11CF3E0800FFDDD4 /* Katy Perry 2 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 2 Icon.jpg"; sourceTree = "<group>"; };
+		B573AA2C11CF3E0800FFDDD4 /* Katy Perry 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 2.jpg"; sourceTree = "<group>"; };
+		B573AA2D11CF3E0800FFDDD4 /* Katy Perry 3 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 3 Icon.jpg"; sourceTree = "<group>"; };
+		B573AA2E11CF3E0800FFDDD4 /* Katy Perry 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 3.jpg"; sourceTree = "<group>"; };
+		B573AA2F11CF3E0800FFDDD4 /* Katy Perry 4 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 4 Icon.jpg"; sourceTree = "<group>"; };
+		B573AA3011CF3E0800FFDDD4 /* Katy Perry 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry 4.jpg"; sourceTree = "<group>"; };
+		B573AA3111CF3E0800FFDDD4 /* Katy Perry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katy Perry.jpg"; sourceTree = "<group>"; };
+		B573AA3211CF3E0800FFDDD4 /* Persons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Persons.png; sourceTree = "<group>"; };
+		B573AA3311CF3E0800FFDDD4 /* Photo 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Photo 1.jpg"; sourceTree = "<group>"; };
+		B573AA3411CF3E0800FFDDD4 /* Photo 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Photo 2.jpg"; sourceTree = "<group>"; };
+		B573AA3511CF3E0800FFDDD4 /* Photo 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Photo 3.jpg"; sourceTree = "<group>"; };
+		B573AA3611CF3E0800FFDDD4 /* Taylor Swift 1 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taylor Swift 1 Icon.jpg"; sourceTree = "<group>"; };
+		B573AA3711CF3E0800FFDDD4 /* Taylor Swift 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taylor Swift 1.jpg"; sourceTree = "<group>"; };
+		B573AA3811CF3E0800FFDDD4 /* Taylor Swift 2 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taylor Swift 2 Icon.jpg"; sourceTree = "<group>"; };
+		B573AA3911CF3E0800FFDDD4 /* Taylor Swift 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taylor Swift 2.jpg"; sourceTree = "<group>"; };
+		B573AA3A11CF3E0800FFDDD4 /* Taylor Swift 3 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taylor Swift 3 Icon.jpg"; sourceTree = "<group>"; };
+		B573AA3B11CF3E0800FFDDD4 /* Taylor Swift 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taylor Swift 3.jpg"; sourceTree = "<group>"; };
+		B573AA3C11CF3E0800FFDDD4 /* Taylor Swift 4 Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taylor Swift 4 Icon.jpg"; sourceTree = "<group>"; };
+		B573AA3D11CF3E0800FFDDD4 /* Taylor Swift 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taylor Swift 4.jpg"; sourceTree = "<group>"; };
+		B573AA3E11CF3E0800FFDDD4 /* Taylor Swift.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taylor Swift.jpg"; sourceTree = "<group>"; };
+		B573AA5511CF3E1800FFDDD4 /* Paparazzi.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Paparazzi.xcdatamodel; sourceTree = "<group>"; };
+		B573AA5711CF3E2800FFDDD4 /* FakeData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FakeData.plist; path = Resources/FakeData.plist; sourceTree = "<group>"; };
+		B573AA7B11CF49DF00FFDDD4 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		B573AA7C11CF49DF00FFDDD4 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		B573AA7D11CF49DF00FFDDD4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B573AA7E11CF49DF00FFDDD4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		B5BF07B211C6205A0082E71D /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		B5BF07B311C6205A0082E71D /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
-		B5BF07BA11C6206B0082E71D /* FakeData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FakeData.plist; path = Resources/FakeData.plist; sourceTree = "<group>"; };
-		B5BF07BB11C6206B0082E71D /* Photo 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Photo 1.jpg"; path = "Resources/Photo 1.jpg"; sourceTree = "<group>"; };
-		B5BF07BC11C6206B0082E71D /* Photo 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Photo 2.jpg"; path = "Resources/Photo 2.jpg"; sourceTree = "<group>"; };
-		B5BF07BD11C6206B0082E71D /* Photo 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Photo 3.jpg"; path = "Resources/Photo 3.jpg"; sourceTree = "<group>"; };
 		B5BF07C811C622120082E71D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -114,6 +122,10 @@
 			children = (
 				B5BF07B211C6205A0082E71D /* FlickrFetcher.h */,
 				B5BF07B311C6205A0082E71D /* FlickrFetcher.m */,
+				B573AA7B11CF49DF00FFDDD4 /* Photo.h */,
+				B573AA7C11CF49DF00FFDDD4 /* Photo.m */,
+				B573AA7D11CF49DF00FFDDD4 /* Person.h */,
+				B573AA7E11CF49DF00FFDDD4 /* Person.m */,
 				B565FB6311C384B400FDC062 /* PhotoListViewController.h */,
 				B565FB6411C384B400FDC062 /* PhotoListViewController.m */,
 				B565FB6A11C384CA00FDC062 /* PhotoDetailViewController.h */,
@@ -137,6 +149,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				B573AA2811CF3E0800FFDDD4 /* Images */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -158,34 +171,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B573AA5711CF3E2800FFDDD4 /* FakeData.plist */,
+				B573AA5511CF3E1800FFDDD4 /* Paparazzi.xcdatamodel */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				B565FACB11C3637C00FDC062 /* PersonListViewController.xib */,
 				B565FB6511C384B400FDC062 /* PhotoListViewController.xib */,
 				B565FB6C11C384CA00FDC062 /* PhotoDetailViewController.xib */,
 				8D1107310486CEB800E47090 /* Paparazzi2-Info.plist */,
-				B5BF07BA11C6206B0082E71D /* FakeData.plist */,
-				B5BF07BB11C6206B0082E71D /* Photo 1.jpg */,
-				B5BF07BC11C6206B0082E71D /* Photo 2.jpg */,
-				B5BF07BD11C6206B0082E71D /* Photo 3.jpg */,
-				B5B901E611C50180007892BB /* Persons.png */,
-				B5B9018011C4F92E007892BB /* Katy Perry 1 Icon.jpg */,
-				B5B9018111C4F92E007892BB /* Katy Perry 1.jpg */,
-				B5B9018211C4F92E007892BB /* Katy Perry 2 Icon.jpg */,
-				B5B9018311C4F92E007892BB /* Katy Perry 2.jpg */,
-				B5B9018411C4F92E007892BB /* Katy Perry 3 Icon.jpg */,
-				B5B9018511C4F92E007892BB /* Katy Perry 3.jpg */,
-				B5B901A711C4FB18007892BB /* Katy Perry 4 Icon.jpg */,
-				B5B901A811C4FB18007892BB /* Katy Perry 4.jpg */,
-				B5B9018611C4F92E007892BB /* Katy Perry.jpg */,
-				B5B9018711C4F92E007892BB /* Taylor Swift 1 Icon.jpg */,
-				B5B9018811C4F92E007892BB /* Taylor Swift 1.jpg */,
-				B5B9018911C4F92E007892BB /* Taylor Swift 2 Icon.jpg */,
-				B5B9018A11C4F92E007892BB /* Taylor Swift 2.jpg */,
-				B5B9018B11C4F92E007892BB /* Taylor Swift 3 Icon.jpg */,
-				B5B9018C11C4F92E007892BB /* Taylor Swift 3.jpg */,
-				B5B9018D11C4F92E007892BB /* Taylor Swift 4 Icon.jpg */,
-				B5B9018E11C4F92E007892BB /* Taylor Swift 4.jpg */,
-				B5B9018F11C4F92E007892BB /* Taylor Swift.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -199,6 +191,35 @@
 				B5BF07C811C622120082E71D /* CoreData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B573AA2811CF3E0800FFDDD4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B573AA2911CF3E0800FFDDD4 /* Katy Perry 1 Icon.jpg */,
+				B573AA2A11CF3E0800FFDDD4 /* Katy Perry 1.jpg */,
+				B573AA2B11CF3E0800FFDDD4 /* Katy Perry 2 Icon.jpg */,
+				B573AA2C11CF3E0800FFDDD4 /* Katy Perry 2.jpg */,
+				B573AA2D11CF3E0800FFDDD4 /* Katy Perry 3 Icon.jpg */,
+				B573AA2E11CF3E0800FFDDD4 /* Katy Perry 3.jpg */,
+				B573AA2F11CF3E0800FFDDD4 /* Katy Perry 4 Icon.jpg */,
+				B573AA3011CF3E0800FFDDD4 /* Katy Perry 4.jpg */,
+				B573AA3111CF3E0800FFDDD4 /* Katy Perry.jpg */,
+				B573AA3211CF3E0800FFDDD4 /* Persons.png */,
+				B573AA3311CF3E0800FFDDD4 /* Photo 1.jpg */,
+				B573AA3411CF3E0800FFDDD4 /* Photo 2.jpg */,
+				B573AA3511CF3E0800FFDDD4 /* Photo 3.jpg */,
+				B573AA3611CF3E0800FFDDD4 /* Taylor Swift 1 Icon.jpg */,
+				B573AA3711CF3E0800FFDDD4 /* Taylor Swift 1.jpg */,
+				B573AA3811CF3E0800FFDDD4 /* Taylor Swift 2 Icon.jpg */,
+				B573AA3911CF3E0800FFDDD4 /* Taylor Swift 2.jpg */,
+				B573AA3A11CF3E0800FFDDD4 /* Taylor Swift 3 Icon.jpg */,
+				B573AA3B11CF3E0800FFDDD4 /* Taylor Swift 3.jpg */,
+				B573AA3C11CF3E0800FFDDD4 /* Taylor Swift 4 Icon.jpg */,
+				B573AA3D11CF3E0800FFDDD4 /* Taylor Swift 4.jpg */,
+				B573AA3E11CF3E0800FFDDD4 /* Taylor Swift.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,29 +268,29 @@
 				B565FACD11C3637C00FDC062 /* PersonListViewController.xib in Resources */,
 				B565FB6711C384B400FDC062 /* PhotoListViewController.xib in Resources */,
 				B565FB6E11C384CA00FDC062 /* PhotoDetailViewController.xib in Resources */,
-				B5B9019011C4F92E007892BB /* Katy Perry 1 Icon.jpg in Resources */,
-				B5B9019111C4F92E007892BB /* Katy Perry 1.jpg in Resources */,
-				B5B9019211C4F92E007892BB /* Katy Perry 2 Icon.jpg in Resources */,
-				B5B9019311C4F92E007892BB /* Katy Perry 2.jpg in Resources */,
-				B5B9019411C4F92E007892BB /* Katy Perry 3 Icon.jpg in Resources */,
-				B5B9019511C4F92E007892BB /* Katy Perry 3.jpg in Resources */,
-				B5B9019611C4F92E007892BB /* Katy Perry.jpg in Resources */,
-				B5B9019711C4F92E007892BB /* Taylor Swift 1 Icon.jpg in Resources */,
-				B5B9019811C4F92E007892BB /* Taylor Swift 1.jpg in Resources */,
-				B5B9019911C4F92E007892BB /* Taylor Swift 2 Icon.jpg in Resources */,
-				B5B9019A11C4F92E007892BB /* Taylor Swift 2.jpg in Resources */,
-				B5B9019B11C4F92E007892BB /* Taylor Swift 3 Icon.jpg in Resources */,
-				B5B9019C11C4F92E007892BB /* Taylor Swift 3.jpg in Resources */,
-				B5B9019D11C4F92E007892BB /* Taylor Swift 4 Icon.jpg in Resources */,
-				B5B9019E11C4F92E007892BB /* Taylor Swift 4.jpg in Resources */,
-				B5B9019F11C4F92E007892BB /* Taylor Swift.jpg in Resources */,
-				B5B901A911C4FB18007892BB /* Katy Perry 4 Icon.jpg in Resources */,
-				B5B901AA11C4FB18007892BB /* Katy Perry 4.jpg in Resources */,
-				B5B901E711C50180007892BB /* Persons.png in Resources */,
-				B5BF07BE11C6206B0082E71D /* FakeData.plist in Resources */,
-				B5BF07BF11C6206B0082E71D /* Photo 1.jpg in Resources */,
-				B5BF07C011C6206B0082E71D /* Photo 2.jpg in Resources */,
-				B5BF07C111C6206B0082E71D /* Photo 3.jpg in Resources */,
+				B573AA3F11CF3E0800FFDDD4 /* Katy Perry 1 Icon.jpg in Resources */,
+				B573AA4011CF3E0800FFDDD4 /* Katy Perry 1.jpg in Resources */,
+				B573AA4111CF3E0800FFDDD4 /* Katy Perry 2 Icon.jpg in Resources */,
+				B573AA4211CF3E0800FFDDD4 /* Katy Perry 2.jpg in Resources */,
+				B573AA4311CF3E0800FFDDD4 /* Katy Perry 3 Icon.jpg in Resources */,
+				B573AA4411CF3E0800FFDDD4 /* Katy Perry 3.jpg in Resources */,
+				B573AA4511CF3E0800FFDDD4 /* Katy Perry 4 Icon.jpg in Resources */,
+				B573AA4611CF3E0800FFDDD4 /* Katy Perry 4.jpg in Resources */,
+				B573AA4711CF3E0800FFDDD4 /* Katy Perry.jpg in Resources */,
+				B573AA4811CF3E0800FFDDD4 /* Persons.png in Resources */,
+				B573AA4911CF3E0800FFDDD4 /* Photo 1.jpg in Resources */,
+				B573AA4A11CF3E0800FFDDD4 /* Photo 2.jpg in Resources */,
+				B573AA4B11CF3E0800FFDDD4 /* Photo 3.jpg in Resources */,
+				B573AA4C11CF3E0800FFDDD4 /* Taylor Swift 1 Icon.jpg in Resources */,
+				B573AA4D11CF3E0800FFDDD4 /* Taylor Swift 1.jpg in Resources */,
+				B573AA4E11CF3E0800FFDDD4 /* Taylor Swift 2 Icon.jpg in Resources */,
+				B573AA4F11CF3E0800FFDDD4 /* Taylor Swift 2.jpg in Resources */,
+				B573AA5011CF3E0800FFDDD4 /* Taylor Swift 3 Icon.jpg in Resources */,
+				B573AA5111CF3E0800FFDDD4 /* Taylor Swift 3.jpg in Resources */,
+				B573AA5211CF3E0800FFDDD4 /* Taylor Swift 4 Icon.jpg in Resources */,
+				B573AA5311CF3E0800FFDDD4 /* Taylor Swift 4.jpg in Resources */,
+				B573AA5411CF3E0800FFDDD4 /* Taylor Swift.jpg in Resources */,
+				B573AA5811CF3E2800FFDDD4 /* FakeData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +307,9 @@
 				B565FB6611C384B400FDC062 /* PhotoListViewController.m in Sources */,
 				B565FB6D11C384CA00FDC062 /* PhotoDetailViewController.m in Sources */,
 				B5BF07B411C6205A0082E71D /* FlickrFetcher.m in Sources */,
+				B573AA5611CF3E1800FFDDD4 /* Paparazzi.xcdatamodel in Sources */,
+				B573AA7F11CF49DF00FFDDD4 /* Photo.m in Sources */,
+				B573AA8011CF49DF00FFDDD4 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

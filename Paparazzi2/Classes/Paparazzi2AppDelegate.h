@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlickrFetcher.h"
+#import "Person.h"
+#import "Photo.h"
 #import "PersonListViewController.h"
 #import "PhotoListViewController.h"
 
 @interface Paparazzi2AppDelegate : NSObject <UIApplicationDelegate> {
+    FlickrFetcher *flickrFetcher;
+    NSManagedObjectContext *flickrContext;
+    
     UIWindow *window;
     
     PersonListViewController *personsViewController;
@@ -23,5 +29,7 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
+- (NSString *)applicationDocumentsDirectory;
+- (void)populateCDStorage;
 @end
 
