@@ -69,6 +69,7 @@
             NSLog(@"Person added: %@", person);
             [personNames addObject:personName];
         } else {
+            predicate = [NSPredicate predicateWithFormat:@"name LIKE %@", personName];
             NSArray *persons = [flickrFetcher fetchManagedObjectsForEntity:@"Person" withPredicate:predicate];
             Person *person = [persons objectAtIndex:0];
             [photo setPerson:person];
