@@ -111,21 +111,21 @@
     
     NSArray *pts = [self polygonNodesInRect:bounds numberOfSides:polygon.numberOfSides];
 
-    CGContextBeginPath (context);
+    CGContextBeginPath(context);
     
     NSValue *v = [pts objectAtIndex:0];
     CGPoint pt = [v CGPointValue];
-    CGContextMoveToPoint (context, pt.x, pt.y);
+    CGContextMoveToPoint(context, pt.x, pt.y);
     for (int i = 1; i < polygon.numberOfSides; i++) {
         v = [pts objectAtIndex:i];
         pt = [v CGPointValue];
-        CGContextAddLineToPoint (context, pt.x, pt.y);
+        CGContextAddLineToPoint(context, pt.x, pt.y);
     }
     v = [pts objectAtIndex:0];
     pt = [v CGPointValue];
     CGContextAddLineToPoint(context, pt.x, pt.y);
 
-    CGContextDrawPath (context, kCGPathFillStroke);
+    CGContextDrawPath(context, kCGPathFillStroke);
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
