@@ -16,6 +16,7 @@
 		B5443BDC11B95F5F00A9CA0E /* PolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5443BDA11B95F5F00A9CA0E /* PolygonView.m */; };
 		B58F894911B942F80047FACA /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = B58F894811B942F80047FACA /* Controller.m */; };
 		B58F8A2411B94F900047FACA /* PolygonShape.m in Sources */ = {isa = PBXBuildFile; fileRef = B58F8A2311B94F900047FACA /* PolygonShape.m */; };
+		B59DAE4712FC0063007E4A92 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59DAE4612FC0063007E4A92 /* MainWindow-iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B58F894811B942F80047FACA /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		B58F8A2211B94F900047FACA /* PolygonShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonShape.h; sourceTree = "<group>"; };
 		B58F8A2311B94F900047FACA /* PolygonShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonShape.m; sourceTree = "<group>"; };
+		B59DAE4612FC0063007E4A92 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				B59DAE4512FC0060007E4A92 /* iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -112,6 +115,14 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B59DAE4512FC0060007E4A92 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				B59DAE4612FC0063007E4A92 /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				B59DAE4712FC0063007E4A92 /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +208,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HelloPoly_Prefix.pch;
 				INFOPLIST_FILE = "HelloPoly-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = HelloPoly;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6E48C601-5E9A-4310-9F5F-631CF6D7E051";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A4A3E492-942C-4039-83AB-B3944636A448";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -209,7 +223,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HelloPoly_Prefix.pch;
 				INFOPLIST_FILE = "HelloPoly-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = HelloPoly;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
