@@ -189,6 +189,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Neo Lee (RE4DRB3R3B)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -196,6 +197,7 @@
 				GCC_PREFIX_HEADER = HelloPoly_Prefix.pch;
 				INFOPLIST_FILE = "HelloPoly-Info.plist";
 				PRODUCT_NAME = HelloPoly;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6E48C601-5E9A-4310-9F5F-631CF6D7E051";
 			};
 			name = Debug;
 		};
